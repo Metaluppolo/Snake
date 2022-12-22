@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config.xml -->
+<ConfigurationParameters>
+    <game>
+        <GAME_DIFFICULTY>3</GAME_DIFFICULTY>
+        <OBSTACLES>false</OBSTACLES>
+        <PLAYGROUND_WIDTH>25</PLAYGROUND_WIDTH>
+        <PLAYGROUND_HEIGTH>25</PLAYGROUND_HEIGTH>
+    </game>
+    <style>
+        <BLOCK_SIZE>20</BLOCK_SIZE>
+        <PLAYGROUND_COLOR>lightgreen</PLAYGROUND_COLOR>
+        <OBSTACLE_COLOR>gray</OBSTACLE_COLOR>
+        <SNAKE_BORDER_COLOR>blue</SNAKE_BORDER_COLOR>
+        <SNAKE_HEAD_COLOR>cornflowerblue</SNAKE_HEAD_COLOR>
+        <SNAKE_BODY_COLOR>skyblue</SNAKE_BODY_COLOR>
+        <FONT>Serif</FONT>
+        <FONT_SIZE unit="px">30</FONT_SIZE>
+    </style>
+    <keybinding>
+        <KEY_UP></KEY_UP>
+        <KEY_RIGHT></KEY_RIGHT>
+        <KEY_DOWN></KEY_DOWN>
+        <KEY_LEFT></KEY_LEFT>
+    </keybinding>
+    <leaderboard>
+        <LEADERBOARD_SIZE>10</LEADERBOARD_SIZE>
+        <LEADERBOARD_DAYS>7</LEADERBOARD_DAYS>        
+    </leaderboard>
+    <technical>
+        <CLIENT_IP>localhost</CLIENT_IP>
+        <SERVER_IP>localhost</SERVER_IP>
+        <SERVER_PORT>8080</SERVER_PORT>
+        <DB_IP>localhost</DB_IP>
+        <DB_PORT>3306</DB_PORT>
+        <DB_USER>root</DB_USER>
+        <DB_PASSWORD></DB_PASSWORD>
+    </technical>
+</ConfigurationParameters>

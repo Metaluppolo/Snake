@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="ConfigurationParameters">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="game">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="GAME_DIFFICULTY" type="xs:int"/>
+                        <xs:element name="OBSTACLES" type="xs:boolean"/>
+                        <xs:element name="PLAYGROUND_WIDTH" type="xs:int"/>
+                        <xs:element name="PLAYGROUND_HEIGTH" type="xs:int"/>                        
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="style">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="BLOCK_SIZE" type="xs:int"/>
+                        <xs:element name="PLAYGROUND_COLOR" type="xs:string"/>
+                        <xs:element name="OBSTACLE_COLOR" type="xs:string"/>
+                        <xs:element name="SNAKE_BORDER_COLOR" type="xs:string"/>
+                        <xs:element name="SNAKE_HEAD_COLOR" type="xs:string"/>
+                        <xs:element name="SNAKE_BODY_COLOR" type="xs:string"/>
+                        <xs:element name="FONT" type="xs:string"/>
+                        <xs:element name="FONT_SIZE">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:int">
+                                        <xs:attribute name="unit"
+                                                      type="xs:string" use="required"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="keybinding">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="KEY_UP" type="xs:string"/>
+                        <xs:element name="KEY_RIGHT" type="xs:string"/>
+                        <xs:element name="KEY_DOWN" type="xs:string"/>
+                        <xs:element name="KEY_LEFT" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="leaderboard">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="LEADERBOARD_SIZE" type="xs:int"/>
+                        <xs:element name="LEADERBOARD_DAYS" type="xs:int"/>                        
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="technical">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="CLIENT_IP" type="xs:string"/>
+                        <xs:element name="SERVER_IP" type="xs:string"/>
+                        <xs:element name="SERVER_PORT" type="xs:int"/>
+                        <xs:element name="DB_IP" type="xs:string"/>
+                        <xs:element name="DB_PORT" type="xs:int"/>
+                        <xs:element name="DB_USER" type="xs:string"/>
+                        <xs:element name="DB_PASSWORD" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

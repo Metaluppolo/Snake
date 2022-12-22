@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- navEvent.xsd -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="GUINavigationEvent">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="clientIP" type="xs:string"/>
+            <xs:element name="timestamp" type="xs:dateTime"/>
+            <xs:element name="eventName" type="xs:string"/>     
+        </xs:sequence>
+        <xs:attribute name="appName" type="xs:string"/>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
